@@ -25,5 +25,4 @@ public class HomeController {
 		model.addAttribute("tweets", tweets);
 		return "searchResults";
 	}
-
 }
