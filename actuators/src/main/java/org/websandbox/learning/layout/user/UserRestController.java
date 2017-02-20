@@ -3,7 +3,6 @@ package org.websandbox.learning.layout.user;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.actuate.metrics.CounterService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,9 +16,6 @@ public class UserRestController {
 
 	@Autowired
 	UserService userService;
-	
-	@Autowired
-	CounterService counterService;
 
 	@RequestMapping(value = "/users", method = RequestMethod.POST)
 	public ResponseEntity<User> createUser(@RequestBody User user) {
@@ -30,7 +26,6 @@ public class UserRestController {
 
 	@RequestMapping(value = "/users", method = RequestMethod.GET)
 	public List<User> getAllUsers() {
-		counterService.increment("counter.get.users");
 		return userService.getAllUsers();
 	}
 
