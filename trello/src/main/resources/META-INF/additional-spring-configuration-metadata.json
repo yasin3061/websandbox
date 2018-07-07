@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "trello.key",
+      "type": "java.lang.String",
+      "description": "Obtain your trello key from https://trello.com/app-key."
+    },
+    {
+      "name": "trello.token",
+      "type": "java.lang.String",
+      "description": "Obtain your trello token from https://trello.com/app-key."
+    }
+  ] }
