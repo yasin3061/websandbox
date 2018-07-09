@@ -28,11 +28,11 @@ public class Echobot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "yasinbee_echo_bot";
+        return "bot-name";
     }
 
     @Override
     public String getBotToken() {
-        return "537972741:AAER37htjgwf3uOIe33BJyLUag3RFOWgXR4";
+        return "token";
     }
 }
