@@ -32,11 +32,11 @@ public class KnightCommander extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "KnightCommanderBot";
+        return "bot-name";
     }
 
     @Override
     public String getBotToken() {
-        return "611447127:AAHBqxv-Zkm04On4X0eurUgAfFN7PkwIdbQ";
+        return "Your-key";
     }
 }
